@@ -1,0 +1,12 @@
+.postsContainer {
+  max-width: 900px;
+  margin: 3rem auto 0;
+}
+
+.postsContainer .posts {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
