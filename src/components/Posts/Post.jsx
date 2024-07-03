@@ -1,16 +1,14 @@
 import styles from './Post.module.css';
+import PropTypes from 'prop-types';
 
-function Post() {
-  const urlImage = 'https://storage.googleapis.com/medium-feed.appspot.com/images%2F9353691196%2F2f49650ed42b1-Para-que-e-usado-o-JavaScript.jpg';
+function Post({ title, content, urlImage}) {
+  
   return (
     <article className={styles.post}>
       <div className={styles.content}>
-        <h3>O que é Javascript?</h3>
+        <h3>{title}</h3>
         <p>
-          JavaScript é uma linguagem de programação que permite a você implementar itens complexos 
-          em páginas web — toda vez que uma página da web faz mais do que apenas sentar lá e mostrar 
-          informações estáticas para você — mostrando atualizações de conteúdo em tempo real, mapas 
-          interativos, animações gráficas em 2D/3D, rolagem de vídeos, etc.
+          {content}
         </p>
       </div>
       
@@ -18,5 +16,11 @@ function Post() {
     </article>
   );
 }
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  urlImage: PropTypes.string.isRequired,
+};
 
 export default Post;
