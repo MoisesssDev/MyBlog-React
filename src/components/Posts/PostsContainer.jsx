@@ -1,5 +1,6 @@
 import styles from './PostsContainer.module.css';
 import Post from './Post';
+import Tags from '../Tags/Tags';
 
 function PostsContainer() {
   const title = 'O que é Javascript?';
@@ -17,6 +18,9 @@ function PostsContainer() {
         <Post title={title} content={content} urlImage={urlImage} />
         <Post title={title} content={content} urlImage={urlImage} />
         <Post title={title} content={content} urlImage={urlImage} />
+      </div>
+      <div className={styles.tags}>
+        <Tags />
       </div>
     </main>
   );
