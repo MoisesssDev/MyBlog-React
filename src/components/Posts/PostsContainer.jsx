@@ -45,7 +45,7 @@ function PostsContainer() {
 
 
   return (
-    <main className={styles.postsContainer}>
+    <>
       <div className={styles.posts}>
         {posts.map(post => (
           <Post key={post.id} title={post.title} content={post.content} urlImage={post.urlImage} />
@@ -55,7 +55,7 @@ function PostsContainer() {
       <div className={styles.tags}>
         <Tags tags={mainTags} />
       </div>
-    </main>
+    </>
   );
 }
 
