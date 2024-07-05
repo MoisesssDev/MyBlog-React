@@ -1,4 +1,6 @@
 .postsContainer {
+  display: flex;
+  gap: 3rem;
   max-width: 900px;
   margin: 3rem auto 0;
 }

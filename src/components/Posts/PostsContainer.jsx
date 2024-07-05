@@ -3,6 +3,7 @@ import Post from './Post';
 import Tags from '../Tags/Tags';
 
 function PostsContainer() {
+  const mainTags = ['javascript', 'ruby on rails', 'react', 'nodejs', 'python', 'docker']
   const title = 'O que é Javascript?';
   const content = `JavaScript é uma linguagem de programação que permite a você implementar 
                   itens complexos em páginas web — toda vez que uma página da web faz mais 
@@ -20,7 +21,7 @@ function PostsContainer() {
         <Post title={title} content={content} urlImage={urlImage} />
       </div>
       <div className={styles.tags}>
-        <Tags />
+        <Tags tags={mainTags} />
       </div>
     </main>
   );
