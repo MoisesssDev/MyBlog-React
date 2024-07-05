@@ -1,6 +1,8 @@
 import styles from './Header.module.css';
+import NavBar from '../NavBar/NavBar';
+import PropsTypes from 'prop-types';
 
-function Header() {
+function Header(props) {
   return (
     <>
       <header className={styles.header}>
@@ -9,18 +11,7 @@ function Header() {
           <input type="text" placeholder='Search'/>
         </div>
 
-        <nav className={styles.navBar}>
-          <a href="#">
-            <span className='material-symbols-outlined'>
-              notifications
-            </span>
-          </a>
-          <a href="#">
-            <span className='material-symbols-outlined'>
-              account_circle
-            </span>
-          </a>
-        </nav>
+        <NavBar autenticado={props.autenticado}/>
       </header>
       <div className={styles.msgBemVindo}>
         <p>Bem-vindo(a) ao melhor Blog de tecnologia</p>
@@ -28,5 +19,9 @@ function Header() {
     </>
   );
 }
+
+Header.propTypes = {
+  autenticado: PropsTypes.bool.isRequired
+};
 
 export default Header;
