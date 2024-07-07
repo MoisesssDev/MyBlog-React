@@ -1,9 +1,7 @@
 .post {
   max-width: 700px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6rem;
+  flex-direction: column;
 }
 
 .post img {
@@ -21,4 +19,41 @@
   
   font-size: 0.85rem;
   color: var(--gray-100);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.author img {
+  margin-right: 0.5rem;
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 0.75rem;
+  letter-spacing: 1.3px;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--gray-100);
+}
+
+.headerPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.mainPost {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
