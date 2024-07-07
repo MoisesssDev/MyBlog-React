@@ -1,13 +1,14 @@
 :root {
   --white: #FFFFFF;
-  --white-200: #F9F9F9;
+  --white-200: #F2F2F2;
 
   --gray-100: #717171;
   --gray-400: #242424;
 
   --yellow-300: rgb(251, 240, 184);
 
-  --gradient: linear-gradient(270deg, rgb(255, 192, 23) 14%, rgb(255, 227, 48) 32%, rgb(251, 240, 184) 51%);
+  /* --gradient: linear-gradient(270deg, rgb(255, 192, 23) 14%, rgb(255, 227, 48) 32%, rgb(251, 240, 184) 51%); */
+  --gradient: linear-gradient(to right, #a1ffce, #faffd1);
 }
 
 * {

@@ -1,6 +1,7 @@
 import styles from './Header.module.css';
 import NavBar from '../NavBar/NavBar';
 import PropsTypes from 'prop-types';
+import Banner from '../Banner/Banner';
 
 function Header(props) {
   return (
@@ -13,9 +14,7 @@ function Header(props) {
 
         <NavBar autenticado={props.autenticado}/>
       </header>
-      <div className={styles.msgBemVindo}>
-        <p>Bem-vindo(a) ao melhor Blog de tecnologia</p>
-      </div>
+      <Banner autenticado={props.autenticado} /> 
     </>
   );
 }

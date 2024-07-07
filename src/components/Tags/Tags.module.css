@@ -1,6 +1,6 @@
 .containerTags {
+  max-width: 400px;
   padding: 1rem;
-  min-width: 300px;
 }
 
 .containerTags h3 {
@@ -17,7 +17,7 @@
 
 .containerTags .tag {
   display: block;
-  background: var(--yellow-300);
+  background: var(--white-200);
   border-radius: 0.3rem;
   font-size: 0.85rem;
   font-weight: 500;
