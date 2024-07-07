@@ -6,3 +6,4 @@ Você pode visualizar o site publicado no Github Pages através deste [link](htt
 
 
 **Captura de tela**
+![image](https://github.com/MoisesssDev/MyBlog-React/assets/92608807/a7bbd032-3277-43e0-b064-cd72254b6bfe)
