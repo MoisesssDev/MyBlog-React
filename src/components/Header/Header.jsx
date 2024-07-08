@@ -2,8 +2,12 @@ import styles from './Header.module.css';
 import NavBar from '../NavBar/NavBar';
 import PropsTypes from 'prop-types';
 import Banner from '../Banner/Banner';
+import { useState } from 'react';
 
 function Header(props) {
+
+  const [usuarioAutenticado, setUsuarioAutenticado] = useState(props.autenticado);
+
   return (
     <>
       <header className={styles.header}>
@@ -12,9 +16,14 @@ function Header(props) {
           <input type="text" placeholder='Search'/>
         </div>
 
-        <NavBar autenticado={props.autenticado}/>
+        <NavBar 
+          autenticado={usuarioAutenticado}
+          setUsuarioAutenticado={setUsuarioAutenticado}
+        />
       </header>
-      <Banner autenticado={props.autenticado} /> 
+      <Banner 
+        autenticado={usuarioAutenticado}
+      /> 
     </>
   );
 }

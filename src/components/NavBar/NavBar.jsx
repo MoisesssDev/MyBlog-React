@@ -1,19 +1,17 @@
 import styles from './NavBar.module.css';
-import { useState } from 'react';
 import PropsTypes from 'prop-types';
 
 function NavBar(props) {
-  const [usuarioAutenticado, setUsuarioAutenticado] = useState(props.autenticado);
 
   const handleClick = () => {
     alert('Bem vindo!');
     
-    setUsuarioAutenticado(!usuarioAutenticado);
+    props.setUsuarioAutenticado(!props.autenticado);
   }
 
   return (
     <nav className={styles.navBar}>
-      { usuarioAutenticado ? (
+      { props.autenticado ? (
         <>
           <a href="#">
             <span className='material-symbols-outlined'>
@@ -43,7 +41,8 @@ function NavBar(props) {
 }
 
 NavBar.propTypes = {
-  autenticado: PropsTypes.bool.isRequired
+  autenticado: PropsTypes.bool.isRequired,
+  setUsuarioAutenticado: PropsTypes.func.isRequired
 }
 
 export default NavBar;
