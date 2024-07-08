@@ -4,7 +4,7 @@ import PropsTypes from 'prop-types';
 function NavBar(props) {
 
   const handleClick = () => {
-    alert('Bem vindo!');
+    props.autenticado ? alert('Você saiu!') : alert('Você entrou!');
     
     props.setUsuarioAutenticado(!props.autenticado);
   }
