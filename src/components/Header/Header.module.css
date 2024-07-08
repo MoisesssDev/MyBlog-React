@@ -30,28 +30,14 @@
   text-align: end;
 }
 
-.navBar {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
+@media (max-width: 516px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.navBar a {
-  text-decoration: none;
-  color: var(--gray-200);
-}
-
-.navBar a span {
-  font-size: 2rem;
-  font-weight: 200;
-}
-
-.msgBemVindo {
-  background: var(--gradient);
-  width: 100%;
-  padding: 0.8rem 0;
-  text-align: center;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 1.3px;
+  .logoContainer {
+    gap: 1rem;
+    flex-direction: column;
+  }
 }

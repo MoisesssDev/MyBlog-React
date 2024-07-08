@@ -1,6 +1,8 @@
 .mainContainer {
   display: flex;
-  max-width: 65%;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 75%;
+  justify-content: center;
+  gap: 5rem;
   margin: 3rem auto;
 }

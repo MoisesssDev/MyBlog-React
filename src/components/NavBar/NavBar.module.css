@@ -43,3 +43,9 @@
   font-size: 2rem;
   font-weight: 100;
 }
+
+@media (max-width: 516px) {
+  .navBar {
+    margin-top: 2rem;
+  }
+}
