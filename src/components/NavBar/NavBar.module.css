@@ -22,3 +22,24 @@
   font-size: 2rem;
   font-weight: 100;
 }
+
+.navBar button {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBar button p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.navBar button span {
+  font-size: 2rem;
+  font-weight: 100;
+}

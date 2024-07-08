@@ -1,10 +1,19 @@
 import styles from './NavBar.module.css';
+import { useState } from 'react';
 import PropsTypes from 'prop-types';
 
 function NavBar(props) {
+  const [usuarioAutenticado, setUsuarioAutenticado] = useState(props.autenticado);
+
+  const handleClick = () => {
+    alert('Bem vindo!');
+    
+    setUsuarioAutenticado(!usuarioAutenticado);
+  }
+
   return (
     <nav className={styles.navBar}>
-      { props.autenticado ? (
+      { usuarioAutenticado ? (
         <>
           <a href="#">
             <span className='material-symbols-outlined'>
@@ -16,14 +25,17 @@ function NavBar(props) {
               account_circle
             </span>
           </a>
+          <button onClick={handleClick}>
+            <p>Sair</p>
+          </button>
         </>
         ) : (
-          <a href="#">
-            <p>Login</p>
+          <button onClick={handleClick}>
+            <p>Entrar</p>
             <span className='material-symbols-outlined'>
               login
             </span>
-          </a>
+          </button>
         )   
       }
     </nav>
