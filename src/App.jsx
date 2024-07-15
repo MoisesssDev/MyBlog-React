@@ -1,16 +1,20 @@
-import Header from "./components/Header/Header"
-import PostsContainer from "./components/Posts/PostsContainer"
-import Footer  from "./components/Footer/Footer"
-import styles from './App.module.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import SignUp from './pages/SignUp'
+import Login from './pages/Login'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
     <>
-      <Header autenticado={false}/>
-      <main className={styles.mainContainer}>
-        <PostsContainer />
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
