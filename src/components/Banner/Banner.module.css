@@ -7,3 +7,7 @@
   font-size: 0.8rem;
   letter-spacing: 1.3px;
 }
+
+.msgBemVindo p {
+  margin: 0;
+}
