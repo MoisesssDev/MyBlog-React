@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Banner.module.css';
 import PropsTypes from 'prop-types';
 
@@ -6,7 +7,7 @@ function Banner(props) {
     if (usuarioAutenticado) {
       return <p>Bem-vindo(a) ao melhor Blog de tecnologia</p>;
     }
-    return <p>Faça parte do melhor Blog de tecnologia. <a href="#">Crie sua conta!</a></p>;
+    return <p>Faça parte do melhor Blog de tecnologia. <Link to='signUp'>Crie sua conta!</Link></p>;
   }
 
   return (

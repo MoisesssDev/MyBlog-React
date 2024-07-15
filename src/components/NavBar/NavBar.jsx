@@ -1,13 +1,8 @@
+import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 import PropsTypes from 'prop-types';
 
 function NavBar(props) {
-
-  const handleClick = () => {
-    props.autenticado ? alert('Você saiu!') : alert('Você entrou!');
-    
-    props.setUsuarioAutenticado(!props.autenticado);
-  }
 
   return (
     <nav className={styles.navBar}>
@@ -23,17 +18,17 @@ function NavBar(props) {
               account_circle
             </span>
           </a>
-          <button onClick={handleClick}>
+          <button>
             <p>Sair</p>
           </button>
         </>
         ) : (
-          <button onClick={handleClick}>
+          <Link to='login'>
             <p>Entrar</p>
             <span className='material-symbols-outlined'>
               login
             </span>
-          </button>
+          </ Link>
         )   
       }
     </nav>
