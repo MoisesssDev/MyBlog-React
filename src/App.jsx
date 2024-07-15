@@ -3,6 +3,7 @@ import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

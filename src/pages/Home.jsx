@@ -1,5 +1,4 @@
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer';
 import PostsContainer from '../components/Posts/PostsContainer';
 import styles from '../App.module.css';
 
@@ -11,7 +10,7 @@ function Home() {
         <main className={styles.mainContainer}>
           <PostsContainer />
         </main>
-        <Footer />
+        
       </> 
     </div>
   );

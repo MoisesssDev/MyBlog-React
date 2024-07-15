@@ -1,0 +1,26 @@
+.form {
+  max-width: 440px;
+  margin: 10rem auto 0;
+}
+
+.form .actions {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  gap: 0.25rem;
+  margin: 0 auto;
+}
+
+.form .actions button img {
+  width: 25px;
+}
+
+.form .loginGoogle {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.form .signUp p {
+  font-size: 13px;
+}
