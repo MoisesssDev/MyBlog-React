@@ -1,8 +1,11 @@
+import FormSignUp from "../components/FormSignUp";
+import HeaderPrimary from "../components/Header/HeaderPrimary";
 function SignUp() {
   return (
-    <div>
-      <h1>Sign Up</h1>
-    </div>
+    <>
+      <HeaderPrimary />
+      <FormSignUp />
+    </>
   );
 }
 
